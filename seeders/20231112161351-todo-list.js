@@ -14,7 +14,7 @@ module.exports = {
       },
       {
         value: "Belajar Express JS",
-        userID: "2",
+        userID: "1",
         createdAt: currentDate,
         updatedAt: currentDate,
       },
