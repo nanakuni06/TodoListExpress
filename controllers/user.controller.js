@@ -19,10 +19,27 @@ module.exports = {
   },
 
   getUserById: async (req, res) => {
-    // Implementasi fungsi untuk mendapatkan user berdasarkan ID
-  },
+    const userId = req.params.id;
 
-  addUser: async (req, res) => {
-    // Implementasi fungsi untuk menambahkan user
+    try {
+      const user = await User.findByPk(userId);
+
+      if (!user) {
+        return res.status(404).json({
+          message: "User tidak ditemukan",
+        });
+      }
+
+      res.json({
+        message: "Berhasil mendapatkan data user",
+        data: user,
+      });
+    } catch (error) {
+      console.error("Error:", error);
+      res.status(500).json({
+        message: "Gagal mendapatkan data user",
+        error: error.message,
+      });
+    }
   },
 };
