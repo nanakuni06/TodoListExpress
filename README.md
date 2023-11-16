@@ -27,8 +27,6 @@
 
   ```json
   {
-    "status": true,
-    "code": 201,
     "message": "Register succesfull"
   }
   ```
@@ -37,8 +35,6 @@
 
   ```json
   {
-    "status": false,
-    "code": 400,
     "message": "Invalid request"
   }
   ```
@@ -70,8 +66,6 @@
 
   ```json
   {
-    "status": true,
-    "code": 200,
     "message": "Login succesfull",
     "userID": 1,
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJuYW5ha3VuaUBnbWFpbC5jb20iLCJpYXQiOjE3MDAxNTA2Mjd9.Xqs8K9nk1zdQWW9q52yPAFvP_cGixX7BygkK01dtCyk"
@@ -82,8 +76,6 @@
 
   ```json
   {
-    "status": false,
-    "code": 400,
     "message": "Username or password incorrect"
   }
   ```
@@ -121,8 +113,6 @@
 
   ```json
   {
-    "status": true,
-    "code": 201,
     "message": "Success create todo"
   }
   ```
@@ -131,8 +121,6 @@
 
   ```json
   {
-    "status": false,
-    "code": 400,
     "message": "Invalid request"
   }
   ```
@@ -198,8 +186,6 @@
 
   ```json
   {
-    "status": false,
-    "code": 500,
     "message": "Internal server error"
   }
   ```
@@ -246,8 +232,6 @@
 
   ```json
   {
-    "status": false,
-    "code": 400,
     "message": "Data not found"
   }
   ```
@@ -284,8 +268,6 @@
 
   ```json
   {
-    "status": true,
-    "code": 200,
     "message": "Success update todo id: 15"
   }
   ```
@@ -294,8 +276,6 @@
 
   ```json
   {
-    "status": false,
-    "code": 400,
     "message": "Invalid request"
   }
   ```
@@ -324,8 +304,6 @@
 
   ```json
   {
-    "status": true,
-    "code": 200,
     "message": "Success delete todo id: 15"
   }
   ```
@@ -334,8 +312,6 @@
 
   ```json
   {
-    "status": false,
-    "code": 404,
     "message": "Data not found"
   }
   ```
@@ -364,8 +340,6 @@
 
   ```json
   {
-    "status": true,
-    "code": 200,
     "message": "Success delete all todo"
   }
   ```
@@ -374,8 +348,6 @@
 
   ```json
   {
-    "status": false,
-    "code": 500,
     "message": "Internal server error"
   }
   ```
